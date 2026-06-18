@@ -3,5 +3,7 @@ kind: Kustomization
 namePrefix: dev-
 resources:
   - ../../base
-patches:
-  - path: patches-replica.yaml
+
+replicas:
+  - name: my-app
+    count: 1
