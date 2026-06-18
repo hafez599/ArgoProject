@@ -4,3 +4,7 @@ metadata:
   name: my-app
 spec:
   replicas: 3
+  template:
+    spec:
+      containers:
+      - name: web  # <-- Crucial line! Tells Kustomize which container to apply this to
